@@ -67,6 +67,27 @@ p {
     color: var(--color-hover-links)
 }
 
+/* List */
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-black);
+    font-size: 1.4rem;
+}
+
+.list--tick {
+    list-style-image: url(../images/Icons/check.svg);
+    padding-left: 3rem;
+}
+
+/* Icons */
+
+.icon {
+    width: 99px;
+    height: 99px;
+}
+
+
 @media screen and (min-width: 1200px) {
     h1 {
         font-size: 8rem;
@@ -98,5 +119,14 @@ p {
 
     .link {
         font-size: 2.2rem;
+    }
+
+    .list {
+        font-size: 1.8rem;
+    }
+
+    .icon {
+        width: 130px;
+        height: 130px;
     }
 }
