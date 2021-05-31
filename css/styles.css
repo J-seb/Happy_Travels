@@ -5,3 +5,80 @@
     --color-white: white;
     --color-black: black;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-black);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+p {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-weight: 900;
+        font-size: 8rem;
+    }
+    
+    h2 {
+        font-size: 5rem;
+    }
+    
+    h3 {
+        font-size: 4.5rem;
+    }
+    
+    h4 {
+        font-size: 3rem;
+    }
+    
+    h5 {
+        font-size: 2.8rem;
+    }
+    
+    h6 {
+        font-size: 2.6rem;
+    }
+    
+    p {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+}
