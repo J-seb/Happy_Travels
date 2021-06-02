@@ -1,2 +1,5 @@
 component.html
 components/
+node_modules/
+dist/
+.cache/
