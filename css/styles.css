@@ -133,7 +133,7 @@ textarea {
     padding: 1rem 2rem;
     cursor: pointer;
     white-space: nowrap;
-    margin: 1rem, 0;
+    margin: 1rem 0;
     font-size: 1.8rem;
 }
 
@@ -141,6 +141,13 @@ textarea {
     display: inline-block;
     background-color: var(--color-white);
     color: var(--color-black);
+    font-style: italic;
+}
+
+.btn--inline.btn-search {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-style: italic;
 }
 
 .btn--inline:hover {
@@ -170,6 +177,13 @@ textarea {
 .input--search {
     border: 1px solid var(--color-border);
     border-radius: 30px;
+    padding-left: 2rem;
+}
+
+.input--search::placeholder {
+    font-size: 2rem;
+    color: gray;
+    font-style: italic;
 }
 
 .input--form {
@@ -191,6 +205,9 @@ textarea {
     border: 1px solid var(--color-border);
     border-radius: 30px;
     display: flex;
+    margin: 8rem auto 3rem;
+    justify-content: center;
+    width: 60%;
 }
 
 .input--group .input {
@@ -207,6 +224,7 @@ textarea {
 
 .card--prices__header, .card--prices__body {
     padding: 2rem 3rem;
+    border-radius: 10px 10px 0 0;
 }
 
 .card--prices__body {
@@ -266,10 +284,22 @@ textarea {
     display: grid;
 }
 
+.grid--cols-plans, .grid--cols-beneficts {
+    margin-top: 3rem;
+}
+
+.grid--cols-2-sm {
+    grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (min-width: 768px) {
-    .grid--cols-2 {
+    .grid--cols-2, .grid--cols-beneficts {
         grid-template-columns: 1fr 1fr;
 
+    }
+
+    .grid--cols-plans {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -277,6 +307,9 @@ textarea {
     .grid--cols-3 {
         grid-template-columns: 1fr 1fr 1fr;
         
+    }
+    .grid--cols-beneficts {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -478,7 +511,292 @@ textarea {
     }
 }
 
+/* Plans & cards block */
+.plan {
+    transition: transform 0.2s ease-out;
+}
 
+.plans__header {
+    text-align: center;
+}
+
+.plans__subtitles {
+    margin: 6rem auto 1rem;
+}
+
+.plans__description {
+    margin: 2rem auto 4rem;
+}
+
+.block-cards-div, .block-plans-div {
+    background-color: var(--color-accent);
+}
+
+.block-plans .grid {
+    gap: 4rem;
+}
+
+.block-plans .card--prices {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan__center {
+    bottom: 10px;
+}
+
+.other-plans__text, .other-plans__header {
+    text-align: center;
+}
+
+.other-plans__header {
+    margin-top: 8rem;
+}
+
+.input--group.show-element-md-search {
+    margin-top: 5rem;
+}
+
+.show-element-md, .show-element-md-search {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .show-element-md {
+        display: block;
+    }
+
+    .show-element-md-search {
+        display: flex;
+    }
+
+    .card--middle {
+        padding-bottom: 10px;
+    }
+
+    .card--corner {
+        padding-top: 10px;
+    }
+}
+
+/* Beneficts*/
+
+
+.block-beneficts .card--beneficts {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.block-beneficts .grid {
+    gap: 4rem;
+}
+
+.beneficts__header {
+    text-align: center;
+    margin: 0 auto 8rem;
+}
+
+.show-last-benefict {
+    display: none;
+}
+
+.card--beneficts:hover .benefict-1 {
+    transform: rotate(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card--beneficts:hover .benefict-2 {
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in;
+}
+
+.card--beneficts:hover .benefict-3 {
+    transform: rotate(-10deg);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.card--beneficts:hover .benefict-4 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+    .show-last-benefict {
+        display: flex;
+    }
+}
+
+/* Sites */
+
+.sites-heading {
+    margin: 0 auto 5rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.article {
+    margin: 5rem auto;
+}
+
+.media__image {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px var(--color-white);
+    width: 100%;
+}
+
+.media__header {
+    margin:0;
+    width: 80%;
+    color: white;
+    font-weight: 400;
+    align-self: center;
+}
+
+.media__header:nth-child(2) {
+    justify-self: end;
+    text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+    .show-sm-media {
+        display: none;
+    }
+}
+
+/* Footer */
+
+.collapsible__heading.collapsible__heading--footer {
+    color: var(--color-white);
+}
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-white);
+}
+
+.footer__header {
+    color: var(--color-white);
+    margin: 0;
+    text-align: center;
+    align-self: center;
+    font-size: 4rem;
+}
+
+.icon__footer {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.grid__footer:hover .icon__footer {
+    transform: rotate(-15deg);
+    transition: transform 0.4s;
+}
+
+.footer__brand {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.list__footer {
+    margin-top: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer__sections {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer .collapsible__chevron {
+        display: none;
+    }
+
+    .footer .collapsible__content {
+        opacity: 1;
+        max-height: 100%;
+    }
+
+    .footer__section {
+        border: 0;
+    }
+}
+
+/* Swipper*/
+.swiper-container {
+    display: none;
+}
+
+  .swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+    background-size: cover;
+}
+
+  .swiper-slide-1-bg {
+    background-image: url(/images/Beach/beach-1751455_1920.webp);
+}
+
+  .swiper-slide-2-bg {
+    background-image: url(/images/Forest/mountains-1587287_1920.webp);
+}
+
+  .swiper-slide-3-bg {
+    background-image: url(/images/Desert/stone-arch-828730_1920.webp);
+}
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.title {
+      margin-top: 4rem;
+}
+
+.subtitle {
+      margin-top: 30vw;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-container {
+        display: block;
+        width: 90%;
+        height: 66.6vw;
+        background: #000;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
 
 @media screen and (min-width: 1200px) {
     body {

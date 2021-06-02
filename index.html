@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- TODO: Add AOS Effects -->
+<!-- TODO: Add Slider -->
+<!-- TODO: Deploy web page -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="" href="images/Icons/plane-ticket.svg">
+    <meta name="description" content="Welcome to Happy Travels your travel agency for your next vacation.">
+    <meta property="og:title" content="Happy Travels...">
+    <meta property="og:description" content="Happy Travels...">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="https://">
+
+    <link rel="icon" href="images/Icons/plane-ticket.svg">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -17,86 +34,480 @@
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="" href="../images/Icons/plane-ticket.svg">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/styles.css">
-
-        <title>Happy Travels</title>
-    </head>
-
-    <body>
+    <!-- Nav Bar -->
+    <header>
         <nav class="nav collapsible">
             <a href="/"><img src="../images/Icons/plane-ticket.svg" alt="Logo" class="img-logo"></a>
             <svg class="icon icon-small nav__toggler">
                 <use xlink:href="../images/Icons/sprite.svg#menu"></use>
             </svg>
             <ul class="list nav__list collapsible__content">
-                <li><a href="#" class="link nav__item">Plans</a></li>
-                <li><a href="#" class="link nav__item">Sites</a></li>
                 <li><a href="#" class="link nav__item">Beneficts</a></li>
+                <li><a href="#" class="link nav__item">Sites</a></li>
+                <li><a href="#" class="link nav__item">Plans</a></li>
                 <li><a href="#" class="link nav__item">Contact</a></li>
             </ul>
         </nav>
+    </header>
 
-        <section class="block block--dark--gradient">
-            <div class="container grid grid--cols-2">
-                <header class="block__header hero__content">
-                    <h1 class="block__heading--banner">Happy Travels</h1>
-                    <h2 class="block__heading--banner">We offer an unforgettable experience to our travelers who wish
-                        escape
-                        from
-                        their rutine...</h2>
-                    <p class="hero__tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore
-                        et dolore magna aliqua. </p>
-                </header>
-            </div>
-        </section>
+    <!-- Hero / Banner -->
+    <section class="block block--dark--gradient">
+        <div class="container grid grid--cols-2">
+            <header class="block__header hero__content">
+                <h1 class="block__heading--banner" data-aos="fade-right">Happy Travels</h1>
+                <h2 class="block__heading--banner" data-aos="fade-right">We offer an unforgettable experience to our
+                    travelers who wish
+                    escape
+                    from
+                    their rutine...</h2>
+                <p class="hero__tagline" data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. </p>
+            </header>
+        </div>
+    </section>
 
-        <section class="block block--main--color">
-            <div class="container grid">
-                <header class="block__header form__content">
-                    <h2 class="block__heading--form">Let us contact you!</h2>
-                    <p class="form__tagline ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien eget mi proin sed.
-                    </p>
-                    <svg class="icon icon-form">
-                        <use xlink:href="../images/Icons/sprite.svg#beach"></use>
+    <!-- Beneficts -->
+
+    <div class="block-cards-div">
+        <section class="block container block-beneficts">
+
+            <h2 class="beneficts__header">Why Choose Us?</h2>
+
+            <div class="grid grid--cols-beneficts">
+
+                <div class="card--beneficts" data-aos="fade-right">
+                    <header class="card--beneficts__header">
+                        Card Title beneficts
+                    </header>
+                    <svg class="icon benefict-1">
+                        <use xlink:href="../images/Icons/sprite.svg#passport"></use>
                     </svg>
-                    <form action="" class="form">
-                        <input type="text" class="input input--form" placeholder="Name">
-                        <input type="email" class="input input--form" placeholder="Email">
-                        <input type="text" class="input input--form" placeholder="Phone Number">
-                        <label for="text-area">Aditional Info</label>
-                        <textarea name="" id="text-area" cols="40" rows="5" class="textarea"></textarea>
-                        <button class="btn btn--inline btn--form">
-                            Send
-                        </button>
-                    </form>
+                    <div class="card--beneficts__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
 
-                </header>
+                <div class="card--beneficts" data-aos="fade-up">
+                    <header class="card--beneficts__header">
+                        Card Title beneficts
+                    </header>
+                    <svg class="icon benefict-2">
+                        <use xlink:href="../images/Icons/sprite.svg#travel"></use>
+                    </svg>
+                    <div class="card--beneficts__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+
+                <div class="card--beneficts" data-aos="fade-down">
+                    <header class="card--beneficts__header">
+                        Card Title beneficts
+                    </header>
+                    <svg class="icon benefict-3">
+                        <use xlink:href="../images/Icons/sprite.svg#travel2"></use>
+                    </svg>
+                    <div class="card--beneficts__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+
+                <div class="card--beneficts show-last-benefict" data-aos="fade-left">
+                    <header class="card--beneficts__header">
+                        Card Title beneficts
+                    </header>
+                    <svg class="icon benefict-4">
+                        <use xlink:href="../images/Icons/sprite.svg#luggage"></use>
+                    </svg>
+                    <div class="card--beneficts__body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
             </div>
         </section>
+    </div>
 
 
+    <!-- Sites -->
+    <div class="block--main--color block">
+        <section class="container">
+            <h2 class="sites-heading">The Most Visited</h2>
+            <article class="grid grid--cols-2-sm article show-sm-media">
+                <h3 class=" media__header">Egestas sed tempus urna et pharetra pharetra </h3>
+                <img src="images/Beach/beach-1751455_640.webp" alt="" class="media__image">
+            </article>
+            <hr class="show-sm-media">
+            <article class=" grid grid--cols-2-sm article show-sm-media">
+                <img src=" images/Forest/mountains-1587287_640.webp" alt="" class="media__image">
+                <h3 class="media__header">Egestas sed tempus urna et pharetra pharetra </h3>
+            </article>
+            <hr class="show-sm-media">
+            <article class=" grid grid--cols-2-sm article show-sm-media">
+                <h3 class=" media__header">Egestas sed tempus urna et pharetra pharetra </h3>
+                <img src="images/Desert/stone-arch-828730_640.webp" alt="" class="media__image">
+            </article>
+        </section>
 
-        <script src="/js/main.js"></script>
-    </body>
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper-container mySwiper">
+            <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-1-bg">
+                    <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                    <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-2-bg">
+                    <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                    <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-3-bg">
+                    <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                    <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 
-    </html>
+    <!-- Plans -->
+
+    <div class="block-plans-div">
+        <section class="block container block-plans">
+
+            <h2 class="plans__header">Our Best Plans</h2>
+
+            <h3 class="plans__subtitles show-element-md">Nationally</h3>
+            <hr class="show-element-md">
+            <p class="plans__description show-element-md">Duis aute irure dolor in reprehenderit in voluptate velit
+                esse
+                cillum dolore
+                eu
+                fugiat nulla pariatur.
+            </p>
+
+            <div class="grid grid--cols-plans">
+                <div class="plan">
+                    <div class="card--prices card--corner">
+                        <header class="card--prices__header">
+                            <h3 class="plan__name">Lorem Ipsum</h3>
+                            <span class="plan__price">$ 5.000 USD</span>
+                            <span class="plan__billing-cycle">Lorem Ipsum</span>
+                        </header>
+                        <div class="card--prices__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                            </ul>
+                            <button class="btn btn--block">
+                                Get It
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan plan__center">
+                    <div class="card--prices card--middle">
+                        <header class="card--prices__header">
+                            <h3 class="plan__name">Lorem Ipsum</h3>
+                            <span class="plan__price">$ 5.000 USD</span>
+                            <span class="plan__billing-cycle">Lorem Ipsum</span>
+                        </header>
+                        <div class="card--prices__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                            </ul>
+                            <button class="btn btn--block">
+                                Get It
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan">
+                    <div class="card--prices card--corner">
+                        <header class="card--prices__header">
+                            <h3 class="plan__name">Lorem Ipsum</h3>
+                            <span class="plan__price">$ 5.000 USD</span>
+                            <span class="plan__billing-cycle">Lorem Ipsum</span>
+                        </header>
+                        <div class="card--prices__body">
+                            <ul class="list list--tick">
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                                <li class="list__item">Lorem ipsum dolor sit.</li>
+                            </ul>
+                            <button class="btn btn--block">
+                                Get It
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="show-element-md">
+                <h3 class="plans__subtitles">Internationally</h3>
+                <hr>
+                <p class="plans__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore
+                    eu
+                    fugiat nulla pariatur.
+                </p>
+
+                <div class="grid grid--cols-plans">
+                    <div class="plan">
+                        <div class="card--prices card--corner">
+                            <header class="card--prices__header">
+                                <h3 class="plan__name">Lorem Ipsum</h3>
+                                <span class="plan__price">$ 5.000 USD</span>
+                                <span class="plan__billing-cycle">Lorem Ipsum</span>
+                            </header>
+                            <div class="card--prices__body">
+                                <ul class="list list--tick">
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                </ul>
+                                <button class="btn btn--block">
+                                    Get It
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan">
+                        <div class="card--prices card--middle">
+                            <header class="card--prices__header">
+                                <h3 class="plan__name">Lorem Ipsum</h3>
+                                <span class="plan__price">$ 5.000 USD</span>
+                                <span class="plan__billing-cycle">Lorem Ipsum</span>
+                            </header>
+                            <div class="card--prices__body">
+                                <ul class="list list--tick">
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                </ul>
+                                <button class="btn btn--block">
+                                    Get It
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="plan">
+                        <div class="card--prices card--corner">
+                            <header class="card--prices__header">
+                                <h3 class="plan__name">Lorem Ipsum</h3>
+                                <span class="plan__price">$ 5.000 USD</span>
+                                <span class="plan__billing-cycle">Lorem Ipsum</span>
+                            </header>
+                            <div class="card--prices__body">
+                                <ul class="list list--tick">
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                    <li class="list__item">Lorem ipsum dolor sit.</li>
+                                </ul>
+                                <button class="btn btn--block">
+                                    Get It
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="other-plans__header show-element-md">Other Plans</h3>
+            <div class="input--group show-element-md-search">
+                <input type="text" class="input input--search" placeholder="Please enter some to search...">
+                <button class="btn btn--inline btn-search">Search</button>
+
+            </div>
+            <p class="other-plans__text show-element-md">Duis aute irure dolor in reprehenderit in voluptate velit
+                esse
+                cillum dolore eu
+                fugiat nulla pariatur.
+            </p>
+
+        </section>
+    </div>
+
+    <!-- Contact Us -->
+
+    <section class="block block--main--color">
+        <div class="container grid">
+            <header class="block__header form__content">
+                <h2 class="block__heading--form">Let us contact you!</h2>
+                <p class="form__tagline ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien eget mi proin sed.
+                </p>
+                <svg class="icon icon-form" data-aos="fade-left">
+                    <use xlink:href="../images/Icons/sprite.svg#beach"></use>
+                </svg>
+                <form class="form">
+                    <input type="text" class="input input--form" placeholder="Name" data-aos="fade-right">
+                    <input type="email" class="input input--form" placeholder="Email" data-aos="fade-right">
+                    <input type="text" class="input input--form" placeholder="Phone Number" data-aos="fade-right">
+                    <label for="text-area" data-aos="fade-right">Aditional Info</label>
+                    <textarea id="text-area" cols="40" rows="5" class="textarea" data-aos="fade-right"></textarea>
+                    <button class="btn btn--inline btn--form">
+                        Send
+                    </button>
+                </form>
+
+            </header>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="block block--dark footer">
+
+        <div class="container grid grid--cols-2-sm grid__footer">
+            <h2 class="footer__header">Happy Travels</h2>
+            <svg class="icon icon__footer">
+                <use xlink:href="images/Icons/sprite.svg#plane-ticket"></use>
+            </svg>
+
+        </div>
+
+        <div class="container grid  footer__sections">
+
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading collapsible__heading--footer">Beneficts</h2>
+                    <svg class="icon-small collapsible__chevron">
+                        <use xlink:href="../images/Icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list list__footer">
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading collapsible__heading--footer">Sites</h2>
+                    <svg class="icon-small collapsible__chevron">
+                        <use xlink:href="../images/Icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list list__footer">
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading collapsible__heading--footer">Plans</h2>
+                    <svg class="icon-small collapsible__chevron">
+                        <use xlink:href="../images/Icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list list__footer">
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading collapsible__heading--footer">Contact</h2>
+                    <svg class="icon-small collapsible__chevron">
+                        <use xlink:href="../images/Icons/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul class="list list__footer">
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                        <li><a href="#" class="link">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <p class="footer__brand">Happy Travels - All Rights Reserved &copy; 2021</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            speed: 600,
+            parallax: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 
 </html>
